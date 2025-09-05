@@ -1,0 +1,174 @@
+.regСontainer,
+.regContainer * {
+  box-sizing: border-box;
+}
+.regContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  flex: 1;
+
+.frame-125 {
+  background: var(--background-color1, #ffffff);
+  padding: 5px 95px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.div {
+  color: var(--text-color1, #000000);
+  text-align: left;
+  font-family: var(--h1-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--h1-font-size, 42px);
+  font-weight: var(--h1-font-weight, 500);
+  position: relative;
+}
+.contener-6 {
+  background: var(--background-color1, #ffffff);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  flex: 1;
+}
+.frame-140 {
+  background: var(--img, undefined);
+  flex-shrink: 0;
+  width: 1440px;
+  height: 594px;
+  position: absolute;
+  left: calc(50% - 720px);
+  top: 0px;
+  object-fit: cover;
+}
+.frame-142 {
+  background: var(--effect-color2, rgba(0, 0, 0, 0.5));
+  padding: 58px 0px 58px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+.frame-56 {
+  background: var(--effect-color3, rgba(70, 68, 67, 0.85));
+  border-radius: 10px;
+  padding: 31px 22px 31px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-49 {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-shrink: 0;
+  width: 61px;
+  position: relative;
+}
+.rectangle-15 {
+  background: var(--figure-color4, #d0d0d0);
+  border-radius: 300px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transform-origin: 0 0;
+}
+.rectangle-12 {
+  background: var(--figure-color6, #feb47b);
+  border-radius: 4px 300px 4px 4px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.rectangle-14 {
+  background: var(--figure-color3, #727577);
+  border-radius: 4px 4px 300px 300px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.rectangle-13 {
+  background: var(--figure-color4, #d0d0d0);
+  border-radius: 4px 4px 4px 300px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.div2 {
+  color: var(--text-color2, #ffffff);
+  text-align: center;
+  font-family: var(--h2-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 500);
+  position: relative;
+  width: 211px;
+}
+.div3 {
+  color: var(--text-color2, #ffffff);
+  text-align: center;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.formGroup {
+  background: var(--frame-color1, #e5e5e6);
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-49 img {
+  height: auto; /* Сохраняет пропорции изображения */
+  max-width: 100%; /* Ограничивает ширину */
+  max-height: 50px; /* Ограничивает высоту */
+  object-fit: contain; /* Устанавливает способ заполнения */
+}
+}

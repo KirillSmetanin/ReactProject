@@ -1,0 +1,499 @@
+.my-button1 {
+    background: var(--batton-color1);
+    border-radius: 50px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    box-shadow: var(--default-box-shadow);
+    overflow: hidden;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .text1 {
+    color: var(--text-color1);
+    text-align: left;
+    font-family: var(--main-text-font-family);
+    font-size: var(--main-text-font-size);
+    font-weight: var(--main-text-font-weight);
+    position: relative;
+  }
+  
+  /* Стили для состояния наведения */
+  .my-button1:hover {
+    background: var(--batton-color2);
+    box-shadow: var(--default-box-shadow);
+  }
+  
+  .my-button1:hover .text1 {
+    color: var(--text-color2);
+  }
+  
+  /* Стили для состояния нажатия */
+  .my-button1:active {
+    background: var(--batton-color3);
+    box-shadow: var(--default-box-shadow);
+    transition: none; /* Убираем анимацию */
+  }
+  
+  .my-button1:active .text1 {
+    color: var(--text-color2);
+    transition: none; /* Убираем анимацию */
+  }
+
+  .my-button2 {
+    background: var(--batton-color4);
+    border-radius: 50px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    box-shadow: var(--default-box-shadow);
+    overflow: hidden;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .my-button2 .text2 {
+    color: var(--text-color4);
+    text-align: left;
+    font-family: var(--main-text-font-family);
+    font-size: var(--main-text-font-size);
+    font-weight: var(--main-text-font-weight);
+    position: relative;
+  }
+  
+  /* Стили для состояния наведения */
+  .my-button2:hover {
+    background: var(--batton-color5);
+    box-shadow: var(--default-box-shadow);
+  }
+  
+  .my-button2:hover .text2 {
+    color: var(--text-color2);
+  }
+  
+  /* Стили для состояния нажатия */
+  .my-button2:active {
+    background: var(--batton-color6);
+    box-shadow: var(--default-box-shadow);
+    transition: none; /* Убираем анимацию */
+  }
+  
+  .my-button2:active .text2 {
+    color: var(--text-color1);
+    transition: none; /* Убираем анимацию */
+  }
+
+
+  .search {
+    background: var(--frame-color1, #e5e5e6);
+    border-radius: 100px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    min-width: 400px;
+    position: relative;
+    box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  }
+  .search-menu {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    overflow: visible;
+  }
+  .search-input {
+    color: var(--text-color1, #000000);
+    text-align: left;
+    font-family: var(--label-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--label-font-size, 18px);
+    font-weight: var(--label-font-weight, 400);
+    position: relative;
+    flex: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .searchicon {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    overflow: visible;
+  }
+
+
+  
+  .dropdown {
+    background: var(--frame-color1, #e5e5e6);
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 10px 5px 10px 5px;
+    width: 300px;
+    height: 40px;
+    min-width: 400px;
+    position: relative;
+    box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  }
+  .dropdown-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .dropdown-title {
+    color: var(--text-color1, #000000);
+    text-align: left;
+    font-family: var(--label-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--label-font-size, 18px);
+    font-weight: var(--label-font-weight, 400);
+    flex: 1;
+    padding: 0px 5px 0px 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dropdown-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  .dropdown-icon.rotate {
+    transform: rotate(180deg);
+  }
+  .dropdown-options {
+    position: fixed; /* Используем fixed для игнорирования ограничений родительских контейнеров */
+    z-index: 9999; /* Высокий z-index для отображения поверх других элементов */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ширина выпадающего списка */
+    max-height: 200px; /* Ограничение высоты */
+    overflow-y: auto; /* Прокрутка, если список слишком длинный */
+  }
+  .dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .dropdown-option:hover {
+    background: var(--frame-hover-color, #d4d4d4);
+  }
+
+
+
+  .cards-1 {
+    background: var(--cards-background-color, #ffffff);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--stroke-color1, #758792);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .cards1-project-img {
+    flex-shrink: 0;
+    width: 405px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .cards1-project-txt {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cards1-project-name {
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 0;
+    width: 405px;
+    position: relative;
+  }
+  .cards1-div {
+    color: var(--text-color1, #000000);
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    position: relative;
+    max-width: 305px;
+  }
+  .cards1-div2 {
+    color: var(--text-color3, #ff5c00);
+    text-align: right;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    position: relative;
+    max-width: 305px;
+  }
+  .cards1-project-op {
+    padding: 0px 50px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-shrink: 0;
+    width: 405px;
+    position: relative;
+  }
+  .cards1-div3 {
+    color: var(--text-color4, #666666);
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    width: 305px;
+    max-width: 305px;
+  }
+  .cards1-project-lvl {
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .cards1-project-bar {
+    flex-shrink: 0;
+    width: 305px;
+    height: 32px;
+    position: relative;
+  }
+  .cards1-rectangle-1 {
+    background: var(--bar-color2, #feb47b);
+    border-radius: 100px;
+    width: 100%;
+    height: 32.5%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 32.13%;
+    top: 35.37%;
+  }
+  .cards1-rectangle-2 {
+    background: var(--bar-color1, #ff7e5f);
+    border-radius: 100px;
+    width: 76%;
+    height: 32.5%;
+    position: absolute;
+    right: 24%;
+    left: 0%;
+    bottom: 32.13%;
+    top: 35.37%;
+  }
+  .cards1-rectangle-3 {
+    background: var(--bar-color3, #ff5c00);
+    border-radius: 200px;
+    width: 4.59%;
+    height: 43.75%;
+    position: absolute;
+    right: 21.97%;
+    left: 73.44%;
+    bottom: 26.56%;
+    top: 29.69%;
+    filter: var(--light, blur(15px));
+  }
+  .cards1-har {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    flex-shrink: 0;
+    max-width: 305px;
+    position: relative;
+  }
+  .cards1-project-proc-sbor {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cards1-_76 {
+    color: var(--text-color4, #666666);
+    text-align: left;
+    font-family: "DmSans-Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cards1-div4 {
+    color: var(--text-color4, #666666);
+    text-align: left;
+    font-family: "DmSans-Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cards1-project-proc-sb {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cards1-_12000 {
+    color: var(--text-color4, #666666);
+    text-align: right;
+    font-family: "DmSans-Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .cards1-div5 {
+    color: var(--text-color4, #666666);
+    text-align: right;
+    font-family: "DmSans-Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .cards1-project-proc-sb2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cards1-_12000000 {
+    color: var(--text-color4, #666666);
+    text-align: right;
+    font-family: "DmSans-Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }  
+
+  .page-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--background-color1, #ffffff);
+    border: 1px solid var(--stroke-color1, #e5e5e6);
+    border-radius: 10px;
+    box-shadow: var(--default-box-shadow, 0px 4px 6px rgba(0, 0, 0, 0.1));
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 400px;
+  }
+
+  .page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .page-card h3 {
+    font-family: var(--h3-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    font-weight: var(--h3-font-weight, 600);
+    color: var(--text-color1, #000000);
+    margin-bottom: 10px;
+  }
+
+  .page-card p {
+    font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+    font-size: var(--main-text-font-size, 16px);
+    line-height: 1.5;
+    color: var(--text-color2, #555555);
+    margin-bottom: 15px;
+  }
+
+  .page-card__link {
+    font-family: var(--main-text-font-family, "Inter-SemiBold", sans-serif);
+    font-size: var(--main-text-font-size, 14px);
+    color: var(--primary-color, #3382d1);
+    text-decoration: none;
+    align-self: flex-end;
+    transition: color 0.2s ease;
+  }
+
+  .page-card__link:hover {
+    color: var(--primary-hover-color, #1a5a9e);
+  }

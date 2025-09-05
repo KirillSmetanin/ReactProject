@@ -1,0 +1,114 @@
+/* Основной контейнер */
+.data-view-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+:root {
+--secondary-color: #6c757d;
+--secondary-hover: #5a6268;
+}
+/* Заголовок */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Переключение таблиц */
+.table-switch {
+    display: flex;
+    gap: 10px;
+}
+
+.table-switch button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-switch button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-switch button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Основной контент */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Таблица */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Кнопка удаления */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: var(--secondary-hover);
+}

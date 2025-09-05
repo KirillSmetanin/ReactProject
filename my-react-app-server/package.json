@@ -1,0 +1,37 @@
+{
+  "name": "my-react-app-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"cd ../my-react-app && npm run dev\" \"npm run watch:server\"",
+    "client": "cd ../my-react-app && npm run dev",
+    "server": "node server.js",
+    "watch:server": "nodemon server.js --verbose",
+    "build:server": "npm run build --prefix ../my-react-app && node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.1",
+    "faker": "^6.6.6",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "path": "^0.12.7",
+    "pg": "^8.13.1",
+    "pg-promise": "^11.10.2"
+  },
+  "description": ""
+}

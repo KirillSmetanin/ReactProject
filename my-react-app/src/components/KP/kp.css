@@ -1,0 +1,304 @@
+.frame-70,
+.frame-70 * {
+  box-sizing: border-box;
+}
+.frame-70 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex: 1;
+
+  .frame-71 {
+    background: var(--dp-background-color3, #464443);
+    padding: 30px 95px 30px 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .frame-86 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 1250px;
+    position: relative;
+  }
+
+  .frame-74 {
+    display: grid; /* Используем CSS Grid для размещения карточек */
+    grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
+    gap: 25px; /* Фиксированное расстояние между карточками */
+    justify-content: center; /* Центрируем карточки */
+    max-width: 1250px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    padding: 20px 0px 20px 0px; /* Внутренние отступы */
+    background: var(--background-color1, #ffffff); /* Фон контейнера */
+  }
+
+.frame-871 {
+  flex-shrink: 0;
+  width: 1250px;
+  height: 40px;
+  position: relative;
+}
+
+.variant {
+  background: var(--kr4-frame-color1, #e5e5e6);
+  border-radius: 100px;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+  min-width: 300px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+}
+._1 {
+  color: var(--kr4-text-color1, #000000);
+  text-align: left;
+  font-family: var(--label-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--label-font-size, 20px);
+  font-weight: var(--label-font-weight, 400);
+  position: relative;
+  flex: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-139 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.variant2 {
+  background: var(--kr4-frame-color1, #e5e5e6);
+  border-radius: 100px;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+  min-width: 300px;
+  position: absolute;
+  left: 310px;
+  top: -0.39px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+}
+.frame-1392 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.batton-1 {
+  background: var(--dp-batton-color1, #66baf1);
+  border-radius: 50px;
+  padding: 10px 50px 10px 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  overflow: hidden;
+}
+.text {
+  color: var(--kr4-text-color1, #000000);
+  text-align: left;
+  font-family: var(--label-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--label-font-size, 20px);
+  font-weight: var(--label-font-weight, 400);
+  position: relative;
+}
+
+.frame-167 {
+  background: var(--dp-background-color3, #464443);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-872 {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.variant3 {
+  background: var(--kr4-frame-color1, #e5e5e6);
+  border-radius: 100px;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 300px;
+  min-width: 300px;
+  position: relative;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+}
+.frame-1393 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.frame-1394 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.frame-1395 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.frame-1396 {
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.frame-168 {
+  flex-shrink: 0;
+  width: 1250px;
+  height: 40px;
+  position: relative;
+}
+.frame-170 {
+  background: var(--frame-color1);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.div {
+  color: #0;
+  text-align: center;
+  font-family: var(--label-font-family, "Inter-Regular", sans-serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.toggle {
+  background: #66baf1;
+  border-radius: 50px;
+  width: 51px;
+  height: 31px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.toggle.active {
+  background-color: #4caf50;
+}
+
+.knob {
+  background: #fff;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+.toggle.active .knob {
+  left: 22px;
+}
+
+.frame-171 {
+  background: var(--frame-color1);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  left: 312px;
+  top: 0px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.frame-172 {
+  background: var(--frame-color1);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  box-shadow: var(--default-box-shadow, 3px 3px 3px 0px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+}

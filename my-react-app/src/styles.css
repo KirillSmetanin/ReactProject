@@ -1,0 +1,574 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  padding-top: 60px;
+  flex: 1;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    z-index: 999;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    text-align: center;
+}
+
+.header {
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-menu {
+  display: flex;
+  padding: 20px;
+  gap: 20px; /* Отступы между элементами меню */
+}
+
+.menu-item {
+  color: #000000;
+  text-align: center; /* Центрируем текст */
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.logo-container {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center; /* Центруем логотип по вертикали */
+    position: relative; /* Добавляем относительное позиционирование */
+    overflow: hidden; /* Прячем все, что выходит за пределы контейнера */
+}
+
+.namelogo {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--h2-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--h2-font-size, 24px);
+  font-weight: var(--h2-font-weight, 500);
+  position: absolute;
+  left: 95px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+  
+.header-icon {
+    width: 45px; /* Увеличиваем ширину логотипа */
+    height: auto; /* Высота остается автоматической для сохранения пропорций */
+    left: 10px; /* Сдвигаем логотип к левому краю */
+    position: absolute;
+    top: 50%; /* Центруем по вертикали */
+    transform: translateY(-50%); /* Корректируем по центру */
+    object-fit: cover; /* Обрезаем изображение */
+    z-index: 1; /* Устанавливаем порядок наложения для логотипа */
+}
+
+.footer {
+  background: var(--dp-background-color1, #ffffff);
+  padding: 48px 95px 48px 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  row-gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div3 {
+  flex-shrink: 0;
+  width: 288px;
+  height: 160px;
+  position: relative;
+}
+.div4 {
+  width: 288px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.div5 {
+  color: var(--dp-text-color3, #3382d1);
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 43px;
+  top: 2px;
+}
+.frame {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  overflow: hidden;
+}
+.frame2 {
+  flex-shrink: 0;
+  width: 27px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.div6 {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 287px;
+}
+.div7 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 288px;
+  position: relative;
+}
+.div8 {
+  color: var(--dp-text-color3, #3382d1);
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.ul {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 120px;
+  position: relative;
+}
+.div9 {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+.div10 {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: 34px;
+}
+.div11 {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: 66px;
+}
+.div12 {
+  color: var(--dp-text-color1, #000000);
+  text-align: left;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: 0px;
+  top: 98px;
+}
+.div13 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 288px;
+  height: 160px;
+  position: relative;
+}
+.div14 {
+  color: var(--dp-text-color3, #3382d1);
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.ul2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 88px;
+  position: relative;
+}
+.div15 {
+  color: var(--dp-text-color1, #000000);
+  text-align: right;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: -0.33px;
+  top: 2px;
+  width: 288px;
+}
+.div16 {
+  color: var(--dp-text-color1, #000000);
+  text-align: right;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: -0.33px;
+  top: 34px;
+  width: 288px;
+}
+.cookie {
+  color: var(--dp-text-color1, #000000);
+  text-align: right;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: absolute;
+  left: -0.33px;
+  top: 66px;
+  width: 288px;
+}
+.div17 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 288px;
+  height: 160px;
+  position: relative;
+}
+.div18 {
+  color: var(--dp-text-color3, #3382d1);
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+}
+.frame-172 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.bxl-ok-ru {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.fa-brands-vk {
+  flex-shrink: 0;
+  width: 28px;
+  height: 24.89px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 28/24.89;
+}
+._7-917-582-60-95 {
+  color: #000000;
+  text-align: right;
+  font-family: var(--main-text-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--main-text-font-size, 18px);
+  font-weight: var(--main-text-font-weight, 400);
+  position: relative;
+}
+.div19 {
+  padding: 6px 95px 6px 95px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._2025 {
+  color: var(--dp-text-color1, #000000);
+  text-align: center;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  position: relative;
+}
+._2025-span {
+  color: var(--dp-text-color1, #000000);
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+._2025-span2 {
+  color: var(--dp-text-color1, #000000);
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+._2025-span3 {
+  color: var(--dp-text-color1, #000000);
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+}
+
+  button {
+    all: unset;
+  }
+  
+  input {
+    all: unset;
+  }
+
+  textarea {
+    all: unset;
+  }
+
+.hero__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 0;
+}
+
+.cube {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #e5e5e6;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+    z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  opacity: 1;
+}
+to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+}
+}
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --color1: #3382d1;
+  --color2: #66baf1;
+  --color3: #3f5980;
+  --color4: #5b87cb;
+  --color5: #252b34;
+  --color6: #4c5a70;
+  --color7: #96a6be;
+  --color8: #f5f9ff;
+  --color9: #ffffff;
+  --color10: #ffffff;
+  --text-color1: #000000;
+  --text-color2: #ffffff;
+  --text-color3: #3382d1;
+  --text-color4: #666666;
+  --background-color1: #ffffff;
+  --background-color3: #464443;
+  --frame-color1: #66baf1;
+  --bar-color1: #3382d1;
+  --bar-color2: #66baf1;
+  --bar-color3: #5b87cb;
+  --stroke-color1: #66baf1;
+  --effect-color1: rgba(255, 255, 255, 0.3);
+  --effect-color2: rgba(0, 0, 0, 0.5);
+  --effect-color3: rgba(70, 68, 67, 0.85);
+  --stroke-color1: #758792;
+  --frame-color1: #e5e5e6;
+  --cards-background-color: #ffffff;
+  --cards-background-color2: #488fd6;
+  --cards-background-color3: #3382d1;
+  --elements-color: #000000;
+  --batton-color1: #66baf1;
+  --batton-color2: #3382d1;
+  --batton-color3: #5b87cb;
+  --batton-color4: #ffffff;
+  --batton-color5: #4c5a70;
+  --batton-color6: #96a6be;
+  --img: undefined;
+
+
+  /* Fonts */
+  --h1-font-family: Inter-Medium, sans-serif;
+  --h1-font-size: 42px;
+  --h1-line-height: normal;
+  --h1-font-weight: 500;
+  --h1-font-style: normal;
+  --main-text-font-family: Inter-Regular, sans-serif;
+  --main-text-font-size: 18px;
+  --main-text-line-height: normal;
+  --main-text-font-weight: 400;
+  --main-text-font-style: normal;
+  --h2-font-family: Inter-Medium, sans-serif;
+  --h2-font-size: 24px;
+  --h2-line-height: normal;
+  --h2-font-weight: 500;
+  --h2-font-style: normal;
+  --h3-font-family: Inter-SemiBold, sans-serif;
+  --h3-font-size: 20px;
+  --h3-line-height: normal;
+  --h3-font-weight: 600;
+  --h3-font-style: normal;
+  --menu-text-font-family: Inter-Medium, sans-serif;
+  --menu-text-font-size: 16px;
+  --menu-text-line-height: normal;
+  --menu-text-font-weight: 500;
+  --menu-text-font-style: normal;
+  --quotes-text-font-family: Inter-Regular, sans-serif;
+  --quotes-text-font-size: 32px;
+  --quotes-text-line-height: normal;
+  --quotes-text-font-weight: 400;
+  --quotes-text-font-style: normal;
+  --quotes-name-font-family: Inter-Regular, sans-serif;
+  --quotes-name-font-size: 24px;
+  --quotes-name-line-height: normal;
+  --quotes-name-font-weight: 400;
+  --quotes-name-font-style: normal;
+  --cards-h1-font-family: Inter-Medium, sans-serif;
+  --cards-h1-font-size: 24px;
+  --cards-h1-line-height: normal;
+  --cards-h1-font-weight: 500;
+  --cards-h1-font-style: normal;
+  --cards-h2-font-family: Inter-Regular, sans-serif;
+  --cards-h2-font-size: 18px;
+  --cards-h2-line-height: normal;
+  --cards-h2-font-weight: 400;
+  --cards-h2-font-style: normal;
+  --cards-text-font-family: Inter-Medium, sans-serif;
+  --cards-text-font-size: 16px;
+  --cards-text-line-height: normal;
+  --cards-text-font-weight: 500;
+  --cards-text-font-style: normal;
+  --label-font-family: Inter-Regular, sans-serif;
+  --label-font-size: 20px;
+  --label-line-height: normal;
+  --label-font-weight: 400;
+  --label-font-style: normal;
+
+  /* Effects */
+  --default-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  --light-filter: blur(15px);
+}
